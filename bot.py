@@ -832,27 +832,7 @@ def private_process(update: telegram.Update, context: telegram.ext.CallbackConte
                     country_name = row['country_name']
                     count = row['count']
                     country_data += f"{country_name} => {count}\n"
-                
-                bot.send_message(
-                    chat_id=utl.admins[0],
-                    text=f"✅ New withdrawal request with ID {row_withdrawal['id']}\n\n"
-                    f"🔻 User: <a href='tg://user?id={from_id}'>{from_id}</a>\n"
-                    f"🔻 Username: @{user_username}\n" 
-                    f"🔻 Amount: {row_withdrawal['amount']} Toman\n"
-                    # f"🔻 Wallet: <code>{row_withdrawal['card']}</code>\n"
-                    f"🔻 Wallet: <code>{text}</code>\n"
-                    f"🔻 {formatted_datetime} (GMT+6)\n\n"
-                    f"🔻 Accounts: {accs_active} Accounts\n"
-                    f"✅ Countries:\n{country_data}",
-                    parse_mode="html",
-
-                    reply_markup={
-                        "inline_keyboard": [
-                            [{"text": "Send Message", "callback_data": f"d;{row_withdrawal['user_id']};sendmsg"}],
-                            # [{"text": "✅ Settled ✅", "callback_data": f"withdrawal;{row_withdrawal['id']};accept"}],
-                        ]
-                    },
-                )
+                    
                 bot.send_message(
                     chat_id=utl.payments_channel,
                     text=f"✅<b>New withdrawal request with ID {row_withdrawal['id']}</b>\n\n"
