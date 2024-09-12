@@ -1,13 +1,13 @@
-admins = [5303365530,1450779437,1322549723]  # Admins UserIDs
-token = "1671127984:AAEOAUb_xVIPvTUcqN2Rqk4eYwC0fDR-6FI"  # Token Bot
-sessions_channel = -1002208920522  # Channel or Group ID
-payments_channel = -1002208920522  # Channel or Group ID
-number_channel = -1002208920522 # Channel or Group ID
+admins = [5117837885]  # Admins UserIDs
+token = "6999582063:AAGa7AhJDIVtjXYWqlFZskBQSWO9cnAtiJg"  # Token Bot
+sessions_channel = -1002189187937  # Channel or Group ID
+payments_channel = -1002206027044  # Channel or Group ID
+number_channel = -1002409291448 # Channel or Group ID
 
 host_db = "193.203.184.95"
-database = "u872052480_debojitxx"  # Database Name
-user_db = "u872052480_debojitxx"  # Database Username
-passwd_db = "Debojit@2024"  # Database Password
+database = "u872052480_abir1"  # Database Name
+user_db = "u872052480_abir1"  # Database Username
+passwd_db = "Abir@2024"  # Database Password
 port = 3306
 
 python_version = "python"
